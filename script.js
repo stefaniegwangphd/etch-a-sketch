@@ -1,15 +1,15 @@
 const gridBox=document.querySelector('#gridBox');
-let columns=16;
-let rows=16;
+let gridSize=16;
 
-for (i=0; i<columns; i++) {
-    const row=document.createElement('div');
-    row.classList.add('box-row');
-    for (j=0; j<rows;j++) {
-        const col=document.createElement('div');
-        col.classList.add('box-col');
-        col.textContent=`(${i},${j})`;
-        row.appendChild(col);
-    }
-    gridBox.appendChild(row);
+for (i=0; i<gridSize*gridSize;i++) {
+    const cell=document.createElement('div');
+    cell.classList.add('cell');
+    cell.addEventListener("mouseover",function (){
+        cell.setAttribute("style", "background-color: pink;")
+    });
+    gridBox.append(cell);
 }
+
+const resetBtn = document.querySelector('#reset');
+
+resetBtn.addEventListener('click',() => location.reload());
