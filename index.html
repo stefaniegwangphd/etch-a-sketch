@@ -9,9 +9,16 @@
 
 <div class="header">Etch-a-Sketch</div>
 
-<div class="container">
-  
-  <button id="reset">Start over</button>
+<div class="container-row">
+  <div class="container-col">
+    <div class="slidecontainer">
+      Reset:
+      <br>
+      <input type="range" min="10" max="50" value="20" class="slider" id="myRange">
+      <div id="sliderOutput"></div>
+    </div>
+    <button id="reset">Start over</button>
+  </div>
   <div class="box" id="gridBox"></div>
 </div>
 
