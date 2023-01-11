@@ -3,11 +3,12 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
+    background-color: lightblue;
     margin:0;
 }
 
 .header {
+    font-family:Cursive;
     font-size:45px;
     font-weight:bold;
 }
@@ -22,7 +23,7 @@ body {
 }
 
 button {
-    background-color: lightslategray;
+    background-color: pink;
     padding: 10px 20px;
     border-radius:8px;
     margin:15px;
@@ -47,6 +48,7 @@ button {
     width:600px;
     height:600px;
     border:solid;
+    background-color: white;
 }
 
 .cell {
@@ -66,7 +68,7 @@ button {
     width: 100%;
     height: 15px;
     border-radius: 5px;  
-    background: #d3d3d3;
+    background: white;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
